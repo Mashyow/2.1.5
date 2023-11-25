@@ -8,10 +8,8 @@ import org.springframework.stereotype.Component;
 public class Egg6 {
 
 
-
     @Autowired
     private Needle7 needle;
-
 
 
     @Override

@@ -21,9 +21,10 @@ public class AppConfig {
         needle7.setDeth8(deth()); // Внедрение зависимости через сеттер
         return needle7;
     }
+
     @Bean
-    public  Deth8 deth() {
-        return new  Deth8();
+    public Deth8 deth() {
+        return new Deth8();
     }
 }
 
