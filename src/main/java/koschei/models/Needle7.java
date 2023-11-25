@@ -3,9 +3,8 @@ package koschei.models;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class Needle7 {
-
-    private final Deth8 deth;
-    public Needle7(Deth8 deth) {
+    private Deth8 deth;
+    public void setDeth8(Deth8 deth) {
         this.deth = deth;
     }
     @Override
@@ -13,4 +12,7 @@ public class Needle7 {
         return ", смерть Кощея на игле :( " + deth.toString();
     }
 }
+
+
+
 

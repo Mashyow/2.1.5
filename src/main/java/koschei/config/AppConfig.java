@@ -9,13 +9,29 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "koschei")
 public class AppConfig {
 
+
     @Bean
     public static Island2 getIsland(Wood3 wood) {
         return new Island2(wood);
     }
 
     @Bean
-    public static Needle7 getNeedle(Deth8 deth){return new Needle7(deth);}
-
-
+    public Needle7 needle7() {
+        Needle7 needle7 = new Needle7();
+        needle7.setDeth8(deth()); // Внедрение зависимости через сеттер
+        return needle7;
+    }
+    @Bean
+    public  Deth8 deth() {
+        return new  Deth8();
+    }
 }
+
+
+
+
+
+
+
+
+
